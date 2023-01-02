@@ -1,3 +1,7 @@
+# Annotate pdf
+Once on the pdf, the user can click on one of the labels and activate that label. Then the user can annotate the document content. Annotation means basically creating rectangular regions on the document. For example, the user activates on 'Title' label by clicking and draws a rectangle over the paper title text in the document. This rectangle is shown on the document and the box coordinates should then show up in the 'Boxes' section of the page. Annotations are saved in local storage and existing annotations should be loaded when the user closes and opens the document page again.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
