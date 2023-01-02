@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.App{
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .heading h2{
+  border-bottom: 1px solid #808080;
+  padding: 5px 0 5px 10px;
+  width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .subhead h3{
+  color: #0a72af;
+  padding-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .subhead h3 span{
+  border-bottom: 2px solid #0a72af;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+
+.pdfView{
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pdfView h3{
+  border-bottom: 1px solid #808080;
+  padding: 5px 0 5px 10px;
+  width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pdfView .info{
+  height: 100%;
+  width: 40%;
+}
+
+.pdfView .pdfBox{
+  width: 60%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.pdfView .info .labels, .pdfView .info .boxes{
+  width: 90%;
+  margin: 4% 5% 0;
+  height: 46%;
+}
+
+.pdfView .info .btn{
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 20px;
+  opacity: .8;
+}
+
+.pdfView .info .labels .btn:hover{
+  opacity: 1;
+}
+
+.pdfView .info .labels .btn.selected{
+  border: 2px solid black;
+}
+
+.pdfView .info .titleBtn{
+  background-color: rgb(255, 165, 0);
+}
+
+.pdfView .info .AuthorBtn{
+  background-color: rgb(5, 173, 5);
+}
+
+.pdfView .data{
+  margin: 10px;
+}
+
+.pdfView .boxes .btn{
+  margin-left: 20px;
+}
+
+
+.pdfView svg{
+  position: absolute;
+}
+
+.react-pdf__Document{
+  position: relative;
+}
+
+.pdfView .temp,.pdfView .perm{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
 }
